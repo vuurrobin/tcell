@@ -65,6 +65,8 @@ type cScreen struct {
 	sync.Mutex
 }
 
+var _ screenImpl = (*cScreen)(nil)
+
 var winLock sync.Mutex
 
 var winPalette = []Color{

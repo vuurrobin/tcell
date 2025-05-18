@@ -57,6 +57,8 @@ type EventError struct {
 	err error
 }
 
+var _ Event = (*EventError)(nil)
+
 // When returns the time when the event was created.
 func (ev *EventError) When() time.Time {
 	return ev.t
