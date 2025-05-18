@@ -1,2 +1,6 @@
 coverage.txt
 go.work
+go.work.sum
+
+.vscode
+*.code-workspace
